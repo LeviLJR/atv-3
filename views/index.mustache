@@ -1,0 +1,10 @@
+{{> layout}}
+<h1>{{title}}</h1>
+{{#links}}
+<a href="{{href}}">{{text}}</a><br>
+{{/links}}
+<form action="/invert" method="get">
+  <label for="text">Texto para inverter:</label>
+  <input type="text" id="text" name="text" required><br><br>
+  <button type="submit">Enviar</button>
+</form>
